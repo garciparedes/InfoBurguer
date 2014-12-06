@@ -44,4 +44,10 @@ public class Hamburguesa extends Producto {
     public String getIngredientes() {
         return ingredientes;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()
+                + "  Ingredientes: " + getIngredientes();
+    }
 }

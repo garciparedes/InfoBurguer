@@ -16,7 +16,6 @@ public class UsaProductosInfoBurguer {
             System.out.println(aCarta.toString());
         }
 
-
     }
 
 
@@ -28,6 +27,10 @@ public class UsaProductosInfoBurguer {
     public static void main(String Args[]){
 
         ArrayList<Producto> carta1 = new ArrayList<Producto>();
+
+        carta1.add(new Bebida("Coca-Cola","hola",3.9, 2000,"Sin Cafeina"));
+
+        carta1.add(new Complemento("Alitas","hola",3.9, 2000,3));
 
         carta1.add(new Hamburguesa("Hamburguesa de pollo","hola",3.9, 2000,"pollo, lechuga, tomate"));
         carta1.add(new Hamburguesa("Hamburguesa de queso","hola",2, 1500,"queso, carne ternera, pepinillo"));
