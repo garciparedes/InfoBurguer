@@ -31,20 +31,11 @@ public abstract class Producto {
 
     /**
      * Setter del atributo nombre.
+     *
      * @param nombre String con el nombre del producto.
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-
-    /**
-     * Setter del atributo calorias.
-     *
-     * @param calorias Integer con el numero de calorias.
-     */
-    public void setCalorias(int calorias) {
-        this.calorias = calorias;
     }
 
 
@@ -69,9 +60,19 @@ public abstract class Producto {
 
 
     /**
+     * Setter del atributo calorias.
+     *
+     * @param calorias Integer con el numero de calorias.
+     */
+    public void setCalorias(int calorias) {
+        this.calorias = calorias;
+    }
+
+
+    /**
      * Getter del atributo nombre.
      *
-     * @return nombre
+     * @return nombre String con el nombre del producto.
      */
     public String getNombre() {
         return nombre;
@@ -79,8 +80,18 @@ public abstract class Producto {
 
 
     /**
+     * Getter del atributo descripcion.
+     *
+     * @return descripcion String con la descripcion del producto.
+     */
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+
+    /**
      * Getter del atributo precio.
-     * @return Precio
+     * @return Precio Double con el precio del producto.
      */
     public double getPrecio() {
         return precio;
@@ -90,20 +101,10 @@ public abstract class Producto {
     /**
      * Getter del atributo calorias.
      *
-     * @return calorias
+     * @return calorias Integer con el numero de calorias.
      */
     public int getCalorias() {
         return calorias;
-    }
-
-
-    /**
-     * Getter del atributo descripcion.
-     *
-     * @return descripcion.
-     */
-    public String getDescripcion() {
-        return descripcion;
     }
 
 

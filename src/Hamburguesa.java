@@ -1,5 +1,6 @@
 /**
  * Clase Hamburguesa.
+ * Hereda de la clase Producto.
  *
  * @author Sergio Garcia Prado
  * @author Adrian Calvo Rojo
@@ -39,12 +40,20 @@ public class Hamburguesa extends Producto {
     /**
      * Getter del atributo ingredientes.
      *
-     * @return ingredientes
+     * @return ingredientes String con los ingredientes de la Hamburguesa.
      */
     public String getIngredientes() {
         return ingredientes;
     }
 
+
+    /**
+     * Metodo que sobreescribe el metodo toString() de la clase Producto.
+     * Devuelve una cadena de caracteres con el siguiente formato:
+     * Nombre: xxxx  Descripcion: xxxxx  Precio: xxxxx  Calorias: xxxxxx  Ingredientes: xxxxxxxxxxxx
+     *
+     * @return String con el contenido de hamburguesa.
+     */
     @Override
     public String toString() {
         return super.toString()
