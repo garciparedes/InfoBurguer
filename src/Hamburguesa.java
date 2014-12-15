@@ -7,7 +7,7 @@
  * @author Adrian Calvo Rojo
  * @author Oscar Fernandez Angulo
  */
-public class Hamburguesa extends Producto {
+public class Hamburguesa extends Alimento {
 
 
     private String ingredientes;

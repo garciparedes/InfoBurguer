@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Combo extends Producto {
 
 
-    private ArrayList<Producto> productos;
+    private ArrayList<Alimento> alimentos;
 
 
     /**
@@ -21,45 +21,44 @@ public class Combo extends Producto {
      * @param nombre String con el nombre del Combo.
      * @param descripcion String con la descripcion del Combo.
      */
-    public Combo(String nombre, String descripcion){
+    public Combo(String nombre, String descripcion, ArrayList<Alimento> alimentos){
         super(nombre, descripcion);
-        this.productos = new ArrayList<Producto>();
+        this.alimentos = alimentos;
     }
 
 
     /**
-     * Setter del atributo productos.
+     * Setter del atributo alimentos.
      *
-     * @param productos Arraylist de productos  que componen el Combo.
+     * @param alimentos Arraylist de alimentos  que componen el Combo.
      */
-    public void setProductos(ArrayList<Producto> productos) {
-        this.productos = productos;
+    public void setAlimentos(ArrayList<Alimento> alimentos) {
+        this.alimentos = alimentos;
     }
 
 
     /**
-     * Getter del atributo productos.
+     * Getter del atributo alimentos.
      *
-     * @return productos ArrayLis de productos que componen el Combo.
+     * @return alimentos ArrayLis de alimentos que componen el Combo.
      */
-    public ArrayList<Producto> getProductos() {
-        return productos;
+    public ArrayList<Alimento> getAlimentos() {
+        return alimentos;
     }
 
 
     /**
      * Getter del atributo calorias.
      *
-     * Para calcular el numero de calorias se suman las de los productos que componen el combo.
+     * Para calcular el numero de calorias se suman las de los alimentos que componen el combo.
      *
      * @return totalCalorias Integer con el numero total de calorias del combo.
      */
-    @Override
     public int getCalorias() {
         int totalCalorias = 0;
 
-        for (int i = 0 ; i < getProductos().size() ; i++){
-            totalCalorias += getProductos().get(i).getCalorias();
+        for (int i = 0 ; i < getAlimentos().size() ; i++){
+            totalCalorias += getAlimentos().get(i).getCalorias();
         }
 
         return totalCalorias;
@@ -69,28 +68,19 @@ public class Combo extends Producto {
     /**
      * Getter del atributo precio.
      *
-     * Para calcular el precio se realiza la suma del de sus productos y a este se le resta el 20%.
+     * Para calcular el precio se realiza la suma del de sus alimentos y a este se le resta el 20%.
      *
      * @return totalPrecio Double con el precio total del combo.
      */
-    @Override
     public double getPrecio() {
         double totalPrecio = 0;
 
-        for (int i = 0 ; i < getProductos().size() ; i++){
-            totalPrecio += getProductos().get(i).getPrecio();
+        for (int i = 0 ; i < getAlimentos().size() ; i++){
+            totalPrecio += getAlimentos().get(i).getPrecio();
         }
 
         totalPrecio = totalPrecio - 0.2*totalPrecio;
 
         return totalPrecio;
-    }
-
-
-    public void addProducto(Producto producto){
-        if (!(producto instanceof Combo)){
-            getProductos().add(producto);
-        }
-
     }
 }

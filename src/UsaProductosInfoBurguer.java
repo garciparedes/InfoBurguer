@@ -35,8 +35,7 @@ public class UsaProductosInfoBurguer {
         carta1.add(new Hamburguesa("Hamburguesa de pollo","hola",3.9, 2000,"pollo, lechuga, tomate"));
         carta1.add(new Hamburguesa("Hamburguesa de queso","hola",2, 1500,"queso, carne ternera, pepinillo"));
 
-        carta1.add(new Combo("Placa Madre","Dos hamburguesas"));
-
+        carta1.add(new Combo("Placa Madre","Dos hamburguesas", new ArrayList<Alimento>()));
 
 
 

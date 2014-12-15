@@ -7,7 +7,7 @@
  * @author Adrian Calvo Rojo
  * @author Oscar Fernandez Angulo
  */
-public class Bebida  extends Producto {
+public class Bebida  extends Alimento {
 
 
     private boolean azucar;

@@ -7,7 +7,7 @@
  * @author Adrian Calvo Rojo
  * @author Oscar Fernandez Angulo
  */
-public class Complemento extends Producto {
+public class Complemento extends Alimento {
 
 
     private int comensales;
