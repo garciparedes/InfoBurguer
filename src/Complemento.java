@@ -1,5 +1,6 @@
 /**
  * Clase Complemento.
+ *
  * Hereda de la clase Producto.
  *
  * @author Sergio Garcia Prado
@@ -49,6 +50,7 @@ public class Complemento extends Producto {
 
     /**
      * Metodo que sobreescribe el metodo toString() de la clase Producto.
+     *
      * Devuelve una cadena de caracteres con el siguiente formato:
      * Nombre: xxxx  Descripcion: xxxxx  Precio: xxxxx  Calorias: xxxxxx  Comensales: xxxx
      *

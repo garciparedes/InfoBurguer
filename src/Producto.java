@@ -104,6 +104,7 @@ public abstract class Producto {
 
     /**
      * Getter del atributo precio.
+     *
      * @return Precio Double con el precio del producto.
      */
     public double getPrecio() {
@@ -123,6 +124,7 @@ public abstract class Producto {
 
     /**
      * Metodo que sobreescribe el metodo toString() de la clase Object.
+     *
      * Devuelve una cadena de caracteres con el siguiente formato:
      * Nombre: xxxx  Descripcion: xxxxx  Precio: xxxxx  Calorias: xxxxxx
      *

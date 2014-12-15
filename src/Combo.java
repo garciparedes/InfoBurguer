@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 /**
  * Clase Combo.
+ *
  * Hereda de la clase Producto.
  *
  * @author Sergio Garcia Prado
@@ -19,11 +20,10 @@ public class Combo extends Producto {
      *
      * @param nombre String con el nombre del Combo.
      * @param descripcion String con la descripcion del Combo.
-     * @param productos ArrayList de productos  que componen el Combo.
      */
-    public Combo(String nombre, String descripcion, ArrayList<Producto> productos){
+    public Combo(String nombre, String descripcion){
         super(nombre, descripcion);
-        this.productos = productos;
+        this.productos = new ArrayList<Producto>();
     }
 
 
@@ -84,5 +84,13 @@ public class Combo extends Producto {
         totalPrecio = totalPrecio - 0.2*totalPrecio;
 
         return totalPrecio;
+    }
+
+
+    public void addProducto(Producto producto){
+        if (!(producto instanceof Combo)){
+            getProductos().add(producto);
+        }
+
     }
 }
