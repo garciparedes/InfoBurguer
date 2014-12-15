@@ -7,6 +7,7 @@
  */
 public abstract class Producto {
 
+
     private String nombre;
     private String descripcion;
     private double precio;
@@ -26,6 +27,18 @@ public abstract class Producto {
         this.descripcion = descripcion;
         this.precio = precio;
         this.calorias = calorias;
+    }
+
+
+    /**
+     * Constructor de la clase producto.
+     *
+     * @param nombre String con el nombre del producto.
+     * @param descripcion String que contiene la descripcion del producto.
+     */
+    public Producto(String nombre, String descripcion){
+        this.nombre = nombre;
+        this.descripcion = descripcion;
     }
 
 

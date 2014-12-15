@@ -28,7 +28,7 @@ public class UsaProductosInfoBurguer {
 
         ArrayList<Producto> carta1 = new ArrayList<Producto>();
 
-        carta1.add(new Bebida("Coca-Cola","hola",3.9, 2000,"Sin Cafeina"));
+        carta1.add(new Bebida("Coca-Cola","hola",3.9, 2000,true, false));
 
         carta1.add(new Complemento("Alitas","hola",3.9, 2000,3));
 

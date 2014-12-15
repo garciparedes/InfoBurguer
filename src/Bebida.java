@@ -9,7 +9,8 @@
 public class Bebida  extends Producto {
 
 
-    private String tipo;
+    private boolean azucar;
+    private boolean cafeina;
 
 
     /**
@@ -19,33 +20,52 @@ public class Bebida  extends Producto {
      * @param descripcion String con la descripcion de la bebida.
      * @param precio Double con el precio de la bebida.
      * @param calorias Integer con el numero de calorias de la bebida.
-     * @param tipo String con el tipo de la bebida (Normal, Sin Cafeina o Sin Azucar).
+     * @param cafeina Boolean que indica si la bebida tiene cafeina.
+     * @param azucar Boolean que indica si la bebida tiene azucar.
      */
-    public Bebida(String nombre, String descripcion, double precio, int calorias, String tipo){
+    public Bebida(String nombre, String descripcion, double precio, int calorias, boolean azucar, boolean cafeina){
         super(nombre, descripcion, precio,calorias);
-        this.tipo = tipo;
+        this.azucar = azucar;
+        this.cafeina = cafeina;
+    }
+
+    /**
+     * Setter del atributo azucar.
+     *
+     * @param azucar Boolean que indica si la bebida tiene azucar.
+     */
+    public void setAzucar(boolean azucar) {
+        this.azucar = azucar;
     }
 
 
     /**
-     * Setter del atributo tipo.
+     * Setter del atributo cafeina.
      *
-     * @param tipo String con el tipo de la bebida.
+     * @param cafeina Boolean que indica si la bebida tiene cafeina.
      */
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setCafeina(boolean cafeina) {
+        this.cafeina = cafeina;
+    }
+
+    /**
+     * Getter del atributo azucar.
+     *
+     * @return azucar Boolean que indica si la bebida tiene azucar.
+     */
+    public boolean getAzucar() {
+        return azucar;
     }
 
 
     /**
-     * Getter del atributo tipo.
+     * Getter del atributo cafeina.
      *
-     * @return comensales String con el tipo de la bebida.
+     * @return cafeina Boolean que indica si la bebida tiene cafeina.
      */
-    public String getTipo() {
-        return tipo;
+    public boolean getCafeina() {
+        return cafeina;
     }
-
 
     /**
      * Metodo que sobreescribe el metodo toString() de la clase Producto.
@@ -56,7 +76,32 @@ public class Bebida  extends Producto {
      */
     @Override
     public String toString() {
+
+
+
         return super.toString()
-                + "  Tipo: " +getTipo();
+                + "  Azucar: " + boolToString(getAzucar())
+                + "  Cafeina: " + boolToString(getCafeina());
+    }
+
+
+    /**
+     * Funcion auxiliar destinada a convertir el valor de un booleano a
+     * cadena de caracteres en castellano.
+     *
+     * En el caso de que el booleano se cumpla se imprime "Si".
+     * En caso contrario se imprime "No".
+     *
+     * @param bool Boolean que se convertira a String.
+     * @return String con el valor de bool pero como cadena de caracteres en castellano.
+     */
+    private String boolToString(boolean bool){
+        String aCadena = "No";
+
+        if (bool) {
+            aCadena = "Si";
+        }
+
+        return  aCadena;
     }
 }
