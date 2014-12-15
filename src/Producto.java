@@ -65,6 +65,27 @@ public abstract class Producto {
 
 
     /**
+     * Getter del atributo precio.
+     *
+     * Metodo abstracto.
+     *
+     * @return precio Double con el precio del producto.
+     */
+    public abstract double getPrecio();
+
+
+    /**
+     * Getter del atributo calorias.
+     *   
+     * Metodo abstracto.
+     *
+     * @return calorias Integer con las calorias del producto.
+     */
+    public abstract int getCalorias();
+
+
+
+    /**
      * Metodo que sobreescribe el metodo toString() de la clase Object.
      *
      * Devuelve una cadena de caracteres con el siguiente formato:
@@ -78,6 +99,8 @@ public abstract class Producto {
 
         return ("Nombre: " + getNombre()
                 + "  Descripcion: " + getDescripcion()
+                + "  Precio: " + getPrecio()
+                + "  Calorias: " + getCalorias()
         );
     }
 }

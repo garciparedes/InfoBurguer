@@ -48,30 +48,13 @@ public class Combo extends Producto {
 
 
     /**
-     * Getter del atributo calorias.
-     *
-     * Para calcular el numero de calorias se suman las de los alimentos que componen el combo.
-     *
-     * @return totalCalorias Integer con el numero total de calorias del combo.
-     */
-    public int getCalorias() {
-        int totalCalorias = 0;
-
-        for (int i = 0 ; i < getAlimentos().size() ; i++){
-            totalCalorias += getAlimentos().get(i).getCalorias();
-        }
-
-        return totalCalorias;
-    }
-
-
-    /**
      * Getter del atributo precio.
      *
      * Para calcular el precio se realiza la suma del de sus alimentos y a este se le resta el 20%.
      *
      * @return totalPrecio Double con el precio total del combo.
      */
+    @Override
     public double getPrecio() {
         double totalPrecio = 0;
 
@@ -82,5 +65,24 @@ public class Combo extends Producto {
         totalPrecio = totalPrecio - 0.2*totalPrecio;
 
         return totalPrecio;
+    }
+
+
+    /**
+     * Getter del atributo calorias.
+     *
+     * Para calcular el numero de calorias se suman las de los alimentos que componen el combo.
+     *
+     * @return totalCalorias Integer con el numero total de calorias del combo.
+     */
+    @Override
+    public int getCalorias() {
+        int totalCalorias = 0;
+
+        for (int i = 0 ; i < getAlimentos().size() ; i++){
+            totalCalorias += getAlimentos().get(i).getCalorias();
+        }
+
+        return totalCalorias;
     }
 }

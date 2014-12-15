@@ -53,6 +53,7 @@ public abstract class Alimento extends Producto{
      *
      * @return Precio Double con el precio del producto.
      */
+    @Override
     public double getPrecio() {
         return precio;
     }
@@ -63,26 +64,8 @@ public abstract class Alimento extends Producto{
      *
      * @return calorias Integer con el numero de calorias.
      */
+    @Override
     public int getCalorias() {
         return calorias;
-    }
-
-
-    /**
-     * Metodo que sobreescribe el metodo toString() de la clase Object.
-     *
-     * Devuelve una cadena de caracteres con el siguiente formato:
-     * Nombre: xxxx  Descripcion: xxxxx  Precio: xxxxx  Calorias: xxxxxx
-     *
-     * @return String con el contenido de producto.
-     */
-    @Override
-    public String toString() {
-
-
-        return (super.toString()
-                + "  Precio: " + getPrecio()
-                + "  Calorias: " + getCalorias()
-        );
     }
 }
