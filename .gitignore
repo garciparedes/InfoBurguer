@@ -1,3 +1,11 @@
 .idea/
 *.iml
 /bin/
+
+*.html
+
+doc/package-list
+
+*.gif
+
+*.css
