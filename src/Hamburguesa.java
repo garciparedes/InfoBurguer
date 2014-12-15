@@ -1,7 +1,7 @@
 /**
  * Clase Hamburguesa.
  *
- * Hereda de la clase Producto.
+ * Hereda de la clase Alimento.
  *
  * @author Sergio Garcia Prado
  * @author Adrian Calvo Rojo
@@ -49,7 +49,7 @@ public class Hamburguesa extends Alimento {
 
 
     /**
-     * Metodo que sobreescribe el metodo toString() de la clase Producto.
+     * Metodo que sobreescribe el metodo toString() de la clase Alimento.
      *
      * Devuelve una cadena de caracteres con el siguiente formato:
      * Nombre: xxxx  Descripcion: xxxxx  Precio: xxxxx  Calorias: xxxxxx  Ingredientes: xxxxxxxxxxxx

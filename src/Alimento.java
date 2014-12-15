@@ -1,5 +1,11 @@
 /**
- * Created by garciparedes on 15/12/14.
+ * Clase Alimento.
+ *
+ * Hereda de la clase Producto.
+ *
+ * @author Sergio Garcia Prado
+ * @author Adrian Calvo Rojo
+ * @author Oscar Fernandez Angulo
  */
 public abstract class Alimento extends Producto{
 
