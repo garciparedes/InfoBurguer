@@ -50,6 +50,9 @@ public abstract class Alimento extends Producto {
      * @param precio Double con el precio de <code>Alimento</code>.
      */
     public void setPrecio(double precio) {
+        if (precio < 0) {
+            throw new IllegalArgumentException(ERROR_PRECIO);
+        }
         this.precio = precio;
     }
 
@@ -60,6 +63,9 @@ public abstract class Alimento extends Producto {
      * @param calorias Integer con el numero de calorias de <code>Alimento</code>.
      */
     public void setCalorias(int calorias) {
+        if (calorias < 0) {
+            throw new IllegalArgumentException(ERROR_CALORIAS);
+        }
         this.calorias = calorias;
     }
 

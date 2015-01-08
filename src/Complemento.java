@@ -43,6 +43,9 @@ public class Complemento extends Alimento {
      * @param comensales Integer con el numero de comensales de <code>Complemento</code>.
      */
     public void setComensales(int comensales) {
+        if (comensales < 1) {
+            throw new IllegalArgumentException(ERROR_COMENSALES);
+        }
         this.comensales = comensales;
     }
 
