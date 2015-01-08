@@ -1,3 +1,4 @@
+package restaurante;
 /**
  * Clase <code>Complemento</code>.
  *
@@ -71,6 +72,6 @@ public class Complemento extends Alimento {
     @Override
     public String toString() {
         return super.toString()
-                + "  Comensales: " + comensales;
+                + ",  Comensales: " + comensales;
     }
 }

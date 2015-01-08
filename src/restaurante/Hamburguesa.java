@@ -1,3 +1,4 @@
+package restaurante;
 /**
  * Clase <code>Hamburguesa</code>.
  *
@@ -59,6 +60,6 @@ public class Hamburguesa extends Alimento {
     @Override
     public String toString() {
         return super.toString()
-                + "  Ingredientes: " + getIngredientes();
+                + ",  Ingredientes: " + getIngredientes();
     }
 }

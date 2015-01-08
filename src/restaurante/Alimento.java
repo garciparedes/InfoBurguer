@@ -1,3 +1,4 @@
+package restaurante;
 /**
  * Clase <code>Alimento</code>.
  *

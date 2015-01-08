@@ -1,4 +1,12 @@
+package test;
 import java.util.ArrayList;
+
+import restaurante.Alimento;
+import restaurante.Bebida;
+import restaurante.Combo;
+import restaurante.Complemento;
+import restaurante.Hamburguesa;
+import restaurante.Producto;
 
 /**
  * Clase de pruebas.

@@ -1,3 +1,4 @@
+package restaurante;
 /**
  * Clase <code>Bebida</code>.
  *
@@ -82,8 +83,8 @@ public class Bebida  extends Alimento {
     @Override
     public String toString() {
         return super.toString()
-                + "  Azucar: " + boolToString(getAzucar())
-                + "  Cafeina: " + boolToString(getCafeina());
+                + ",  Azucar: " + boolToString(getAzucar())
+                + ",  Cafeina: " + boolToString(getCafeina());
     }
 
 

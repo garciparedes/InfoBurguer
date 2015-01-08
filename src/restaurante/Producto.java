@@ -1,3 +1,4 @@
+package restaurante;
 /**
  * Clase <code>Producto</code>
  *
@@ -97,9 +98,9 @@ public abstract class Producto {
     @Override
     public String toString() {
         return ("Nombre: " + getNombre()
-                + "  Descripcion: " + getDescripcion()
-                + "  Precio: " + getPrecio()
-                + "  Calorias: " + getCalorias()
+                + ",  Descripcion: " + getDescripcion()
+                + ",  Precio: " + getPrecio()
+                + ",  Calorias: " + getCalorias()
         );
     }
 }
