@@ -1,5 +1,7 @@
 /**
- * Clase abstracta para modelar los productos.
+ * Clase <code>Producto</code>
+ *
+ * Es una clase abstracta para modelar los productos.
  *
  * @author Sergio Garcia Prado
  * @author Adrian Calvo Rojo
@@ -13,10 +15,10 @@ public abstract class Producto {
 
 
     /**
-     * Constructor de la clase producto.
+     * Constructor de la clase <code>Producto</code>.
      *
-     * @param nombre String con el nombre del producto.
-     * @param descripcion String que contiene la descripcion del producto.
+     * @param nombre String con el nombre de <code>Producto</code>.
+     * @param descripcion String que contiene la descripcion de <code>Producto</code>.
      */
     public Producto(String nombre, String descripcion){
         this.nombre = nombre;
@@ -25,9 +27,9 @@ public abstract class Producto {
 
 
     /**
-     * Setter del atributo nombre.
+     * Setter del atributo <code>nombre</code>.
      *
-     * @param nombre String con el nombre del producto.
+     * @param nombre String con el nombre de <code>Producto</code>.
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -35,9 +37,9 @@ public abstract class Producto {
 
 
     /**
-     * Setter del atributo descripcion.
+     * Setter del atributo <code>descripcion</code>.
      *
-     * @param descripcion String con la descripcion del producto.
+     * @param descripcion String con la descripcion de <code>Producto</code>.
      */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
@@ -45,9 +47,9 @@ public abstract class Producto {
 
 
     /**
-     * Getter del atributo nombre.
+     * Getter del atributo <code>nombre</code>.
      *
-     * @return nombre String con el nombre del producto.
+     * @return nombre String con el nombre de <code>Producto</code>.
      */
     public String getNombre() {
         return nombre;
@@ -55,9 +57,9 @@ public abstract class Producto {
 
 
     /**
-     * Getter del atributo descripcion.
+     * Getter del atributo <code>descripcion</code>.
      *
-     * @return descripcion String con la descripcion del producto.
+     * @return descripcion String con la descripcion de <code>Producto</code>.
      */
     public String getDescripcion() {
         return descripcion;
@@ -65,38 +67,35 @@ public abstract class Producto {
 
 
     /**
-     * Getter del atributo precio.
+     * Getter del atributo <code>precio</code>.
      *
      * Metodo abstracto.
      *
-     * @return precio Double con el precio del producto.
+     * @return precio Double con el precio de <code>Producto</code>.
      */
     public abstract double getPrecio();
 
 
     /**
-     * Getter del atributo calorias.
+     * Getter del atributo <code>calorias</code>.
      *   
      * Metodo abstracto.
      *
-     * @return calorias Integer con las calorias del producto.
+     * @return calorias Integer con las calorias de <code>Producto</code>.
      */
     public abstract int getCalorias();
 
 
-
     /**
-     * Metodo que sobreescribe el metodo toString() de la clase Object.
+     * Metodo que sobreescribe el metodo toString() de la clase <code>Object</code>.
      *
      * Devuelve una cadena de caracteres con el siguiente formato:
      * Nombre: xxxx  Descripcion: xxxxx
      *
-     * @return String con el contenido de producto.
+     * @return String con el contenido de <code>Producto</code>.
      */
     @Override
     public String toString() {
-
-
         return ("Nombre: " + getNombre()
                 + "  Descripcion: " + getDescripcion()
                 + "  Precio: " + getPrecio()

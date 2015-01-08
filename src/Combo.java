@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 /**
- * Clase Combo.
+ * Clase <code>Combo</code>.
  *
- * Hereda de la clase Producto.
+ * Hereda de la clase <code>Producto</code>.
  *
  * @author Sergio Garcia Prado
  * @author Adrian Calvo Rojo
@@ -16,10 +16,10 @@ public class Combo extends Producto {
 
 
     /**
-     * Constructor de la clase Combo.
+     * Constructor de la clase <code>Combo</code>.
      *
-     * @param nombre String con el nombre del Combo.
-     * @param descripcion String con la descripcion del Combo.
+     * @param nombre String con el nombre de <code>Combo</code>.
+     * @param descripcion String con la descripcion de <code>Combo</code>.
      */
     public Combo(String nombre, String descripcion, ArrayList<Alimento> alimentos){
         super(nombre, descripcion);
@@ -28,19 +28,9 @@ public class Combo extends Producto {
 
 
     /**
-     * Setter del atributo alimentos.
+     * Getter del atributo <code>alimentos</code>.
      *
-     * @param alimentos Arraylist de alimentos  que componen el Combo.
-     */
-    public void setAlimentos(ArrayList<Alimento> alimentos) {
-        this.alimentos = alimentos;
-    }
-
-
-    /**
-     * Getter del atributo alimentos.
-     *
-     * @return alimentos ArrayLis de alimentos que componen el Combo.
+     * @return alimentos ArrayLis de alimentos que componen <code>Combo</code>.
      */
     public ArrayList<Alimento> getAlimentos() {
         return alimentos;
@@ -48,11 +38,11 @@ public class Combo extends Producto {
 
 
     /**
-     * Getter del atributo precio.
+     * Getter del atributo <code>precio</code>.
      *
      * Para calcular el precio se realiza la suma del de sus alimentos y a este se le resta el 20%.
      *
-     * @return totalPrecio Double con el precio total del combo.
+     * @return totalPrecio Double con el precio total de <code>Combo</code>.
      */
     @Override
     public double getPrecio() {
@@ -69,11 +59,11 @@ public class Combo extends Producto {
 
 
     /**
-     * Getter del atributo calorias.
+     * Getter del atributo <code>calorias</code>.
      *
      * Para calcular el numero de calorias se suman las de los alimentos que componen el combo.
      *
-     * @return totalCalorias Integer con el numero total de calorias del combo.
+     * @return totalCalorias Integer con el numero total de calorias de <code>Combo</code>.
      */
     @Override
     public int getCalorias() {

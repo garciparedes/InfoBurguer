@@ -1,7 +1,7 @@
 /**
- * Clase Bebida.
+ * Clase <code>Bebida</code>.
  *
- * Hereda de la clase Alimento.
+ * Hereda de la clase <code>Alimento</code>.
  *
  * @author Sergio Garcia Prado
  * @author Adrian Calvo Rojo
@@ -15,14 +15,14 @@ public class Bebida  extends Alimento {
 
 
     /**
-     * Constructor de la clase bebida.
+     * Constructor de la clase <code>Bebida</code>.
      *
-     * @param nombre String con el nombre de la bebida.
-     * @param descripcion String con la descripcion de la bebida.
-     * @param precio Double con el precio de la bebida.
-     * @param calorias Integer con el numero de calorias de la bebida.
-     * @param cafeina Boolean que indica si la bebida tiene cafeina.
-     * @param azucar Boolean que indica si la bebida tiene azucar.
+     * @param nombre String con el nombre de <code>Bebida</code>.
+     * @param descripcion String con la descripcion de <code>Bebida</code>.
+     * @param precio Double con el precio de <code>Bebida</code>.
+     * @param calorias Integer con el numero de calorias de <code>Bebida</code>
+     * @param cafeina Boolean que indica si <code>Bebida</code> tiene cafeina.
+     * @param azucar Boolean que indica si <code>Bebida</code> tiene azucar.
      */
     public Bebida(String nombre, String descripcion, double precio, int calorias, boolean azucar, boolean cafeina){
         super(nombre, descripcion, precio,calorias);
@@ -30,10 +30,11 @@ public class Bebida  extends Alimento {
         this.cafeina = cafeina;
     }
 
+
     /**
-     * Setter del atributo azucar.
+     * Setter del atributo <code>azucar</code>.
      *
-     * @param azucar Boolean que indica si la bebida tiene azucar.
+     * @param azucar Boolean que indica si <code>Bebida</code> tiene azucar.
      */
     public void setAzucar(boolean azucar) {
         this.azucar = azucar;
@@ -41,18 +42,19 @@ public class Bebida  extends Alimento {
 
 
     /**
-     * Setter del atributo cafeina.
+     * Setter del atributo <code>cafeina</code>.
      *
-     * @param cafeina Boolean que indica si la bebida tiene cafeina.
+     * @param cafeina Boolean que indica si <code>Bebida</code> tiene cafeina.
      */
     public void setCafeina(boolean cafeina) {
         this.cafeina = cafeina;
     }
 
+
     /**
-     * Getter del atributo azucar.
+     * Getter del atributo <code>azucar</code>.
      *
-     * @return azucar Boolean que indica si la bebida tiene azucar.
+     * @return azucar Boolean que indica si <code>Bebida</code> tiene azucar.
      */
     public boolean getAzucar() {
         return azucar;
@@ -60,27 +62,25 @@ public class Bebida  extends Alimento {
 
 
     /**
-     * Getter del atributo cafeina.
+     * Getter del atributo <code>cafeina</code>.
      *
-     * @return cafeina Boolean que indica si la bebida tiene cafeina.
+     * @return cafeina Boolean que indica si <code>Bebida</code> tiene cafeina.
      */
     public boolean getCafeina() {
         return cafeina;
     }
 
+
     /**
-     * Metodo que sobreescribe el metodo toString() de la clase Alimento.
+     * Metodo que sobreescribe el metodo toString() de la clase <code>Alimento</code>.
      *
      * Devuelve una cadena de caracteres con el siguiente formato:
      * Nombre: xxxx  Descripcion: xxxxx  Precio: xxxxx  Calorias: xxxxxx  Tipo: xxxxxxxx
      *
-     * @return String con el contenido de Bebida.
+     * @return String con el contenido de <code>Bebida</code>.
      */
     @Override
     public String toString() {
-
-
-
         return super.toString()
                 + "  Azucar: " + boolToString(getAzucar())
                 + "  Cafeina: " + boolToString(getCafeina());
