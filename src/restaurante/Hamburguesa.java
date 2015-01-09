@@ -12,6 +12,7 @@ public class Hamburguesa extends Alimento {
 
 
     private String ingredientes;
+    private static final String ERROR_INGREDIENTES = "Los ingredientes no pueden ser nulos.";
 
 
     /**
@@ -25,6 +26,10 @@ public class Hamburguesa extends Alimento {
      */
     public Hamburguesa(String nombre, String descripcion, double precio, int calorias, String ingredientes){
         super(nombre, descripcion, precio, calorias);
+        
+        if (ingredientes == null) {
+            throw new IllegalArgumentException(ERROR_INGREDIENTES);
+        }
         this.ingredientes = ingredientes;
     }
 

@@ -13,6 +13,8 @@ public abstract class Producto {
 
     private String nombre;
     private String descripcion;
+    private static final String ERROR_NOMBRE = "El nombre no puede ser nulo.";
+    private static final String ERROR_DESCRIPCION = "La descripcion no puede ser nula.";
 
 
     /**
@@ -22,7 +24,15 @@ public abstract class Producto {
      * @param descripcion String que contiene la descripcion de <code>Producto</code>.
      */
     public Producto(String nombre, String descripcion){
+    	
+    	if (nombre == null) {
+            throw new IllegalArgumentException(ERROR_NOMBRE);
+        }
         this.nombre = nombre;
+        
+        if (descripcion == null) {
+            throw new IllegalArgumentException(ERROR_DESCRIPCION);
+        }
         this.descripcion = descripcion;
     }
 

@@ -69,7 +69,7 @@ public class UsaProductosInfoBurguer {
             System.out.println(CREADO_EXITO);
 
         } catch (IllegalArgumentException e){
-            System.out.println(e.toString());
+            System.out.println(e.getMessage());
             System.out.println(CREADO_FRACASO);
 
         } finally {
@@ -93,7 +93,7 @@ public class UsaProductosInfoBurguer {
             System.out.println(CREADO_EXITO);
 
         } catch (IllegalArgumentException e){
-            System.out.println(e.toString());
+            System.out.println(e.getMessage());
             System.out.println(CREADO_FRACASO);
 
         } finally {
@@ -124,7 +124,7 @@ public class UsaProductosInfoBurguer {
 
         } catch (ClassCastException|IllegalArgumentException e){
 
-            System.out.println(e);
+            System.out.println(e.getMessage());
             System.out.println(CREADO_FRACASO);
         } finally {
             System.out.println();
@@ -147,7 +147,7 @@ public class UsaProductosInfoBurguer {
             System.out.println(CREADO_EXITO);
 
         } catch (IllegalArgumentException e) {
-            System.out.println(e.toString());
+            System.out.println(e.getMessage());
             System.out.println(CREADO_FRACASO);
 
         } finally {
@@ -171,7 +171,7 @@ public class UsaProductosInfoBurguer {
 
         } catch (ClassCastException|IllegalArgumentException e){
 
-            System.out.println(e);
+            System.out.println(e.getMessage());
             System.out.println(CAMBIA_PRECIO_FRACASO);
 
         } finally {

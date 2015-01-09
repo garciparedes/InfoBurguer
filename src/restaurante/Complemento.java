@@ -11,7 +11,7 @@ package restaurante;
 public class Complemento extends Alimento {
 
 
-    private static final String ERROR_COMENSALES = "Los comensales no pueden ser negativos";
+    private static final String ERROR_COMENSALES = "Los comensales no pueden ser negativos.";
 
 
     private int comensales;

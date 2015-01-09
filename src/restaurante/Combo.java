@@ -14,6 +14,7 @@ public class Combo extends Producto {
 
 
     private ArrayList<Alimento> alimentos;
+    private static final String ERROR_ALIMENTOS = "Los alimentos no pueden ser nulos.";
 
 
     /**
@@ -24,6 +25,10 @@ public class Combo extends Producto {
      */
     public Combo(String nombre, String descripcion, ArrayList<Alimento> alimentos){
         super(nombre, descripcion);
+        
+        if (alimentos == null) {
+            throw new IllegalArgumentException(ERROR_ALIMENTOS);
+        }
         this.alimentos = alimentos;
     }
 

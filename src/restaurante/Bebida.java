@@ -27,6 +27,7 @@ public class Bebida  extends Alimento {
      */
     public Bebida(String nombre, String descripcion, double precio, int calorias, boolean azucar, boolean cafeina){
         super(nombre, descripcion, precio,calorias);
+
         this.azucar = azucar;
         this.cafeina = cafeina;
     }

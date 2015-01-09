@@ -11,8 +11,8 @@ package restaurante;
 public abstract class Alimento extends Producto {
 
 
-    private static final String ERROR_PRECIO = "El precio no puede ser negativo";
-    private static final String ERROR_CALORIAS = "Las calorias no pueden ser negativas";
+    private static final String ERROR_PRECIO = "El precio no puede ser negativo.";
+    private static final String ERROR_CALORIAS = "Las calorias no pueden ser negativas.";
 
 
     private double precio;
