@@ -25,12 +25,12 @@ public abstract class Producto {
      */
     public Producto(String nombre, String descripcion){
     	
-    	if (nombre == null) {
+    	if (nombre == null || nombre == "" ) {
             throw new IllegalArgumentException(ERROR_NOMBRE);
         }
         this.nombre = nombre;
         
-        if (descripcion == null) {
+        if (descripcion == null || descripcion == "") {
             throw new IllegalArgumentException(ERROR_DESCRIPCION);
         }
         this.descripcion = descripcion;

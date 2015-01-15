@@ -45,7 +45,6 @@ public class UsaProductosInfoBurguer {
         System.out.println();
     }
 
-
     /**
      * Metodo para introducir productos en la carta.
      */
@@ -110,15 +109,9 @@ public class UsaProductosInfoBurguer {
 
         System.out.println(CREA_COMBO);
 
-        ArrayList<Alimento> listaAlimentos = new ArrayList<>();
-
         try{
 
-            for ( Producto producto : productos ){
-                listaAlimentos.add((Alimento) producto);
-            }
-
-            Combo combo = new Combo(nombre, descripcion, listaAlimentos);
+            Combo combo = new Combo(nombre, descripcion, productos);
             introduceEnCarta(carta, combo);
             System.out.println(CREADO_EXITO);
 
@@ -208,7 +201,7 @@ public class UsaProductosInfoBurguer {
         creaCombo(carta2, "Placa Madre", "Dos Hamburguesas", carta1.get(2) , carta1.get(3));
         creaCombo(carta2, "Combo en combo", "Combo en combo", carta2.get(0));
 
-        creaCombo(carta2, "Patatas Chip", "Tres Raciones patatas", carta1.get(1), carta1.get(1), carta1.get(1));
+        creaCombo(carta2, "Patatas Chip", "Tres Raciones patatas",  carta1.get(1), carta1.get(1), null);
 
 
         imprimeCarta(carta1);

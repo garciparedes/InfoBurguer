@@ -27,7 +27,7 @@ public class Hamburguesa extends Alimento {
     public Hamburguesa(String nombre, String descripcion, double precio, int calorias, String ingredientes){
         super(nombre, descripcion, precio, calorias);
         
-        if (ingredientes == null) {
+        if (ingredientes == null || ingredientes == "") {
             throw new IllegalArgumentException(ERROR_INGREDIENTES);
         }
         this.ingredientes = ingredientes;

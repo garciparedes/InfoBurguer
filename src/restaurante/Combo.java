@@ -23,13 +23,19 @@ public class Combo extends Producto {
      * @param nombre String con el nombre de <code>Combo</code>.
      * @param descripcion String con la descripcion de <code>Combo</code>.
      */
-    public Combo(String nombre, String descripcion, ArrayList<Alimento> alimentos){
+    public Combo(String nombre, String descripcion, Producto... productos){
         super(nombre, descripcion);
-        
-        if (alimentos == null) {
-            throw new IllegalArgumentException(ERROR_ALIMENTOS);
+
+        alimentos = new ArrayList<Alimento>();
+
+        for ( Producto producto : productos ){
+
+            if (producto == null) {
+                throw new IllegalArgumentException(ERROR_ALIMENTOS);
+            }
+            alimentos.add((Alimento) producto);
+
         }
-        this.alimentos = alimentos;
     }
 
 
